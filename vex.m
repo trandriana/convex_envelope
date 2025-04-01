@@ -1,7 +1,13 @@
 function [lower_convex, upper_convex] = vex(x, y)
-%vex computes the lower and upper convex envelopes of the scatter point (x, y)
-%   lower_convex are the coordinates of the convex envelope
-%   upper_convex are the coordinates of the concave envelope 
+% Filename: vex.m
+% Description: This function computes the lower and upper convex envelopes of the scatter points (x, y)
+% Authors: Tsiry Avisoa Randrianasolo
+% Syntax: [lower_convex, upper_convex] = vex(x, y)
+% Input:
+% -- (x, y): coordinates of scatter points in column vectors
+% Output:
+% -- lower_convex: coordinates of the lower convex envelope in column vectors
+% -- upper_convex: coordinates of the upper convex envelope (convace envelope) in column vectors
 
 P = [x, y];
 
